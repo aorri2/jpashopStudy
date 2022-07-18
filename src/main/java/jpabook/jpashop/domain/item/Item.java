@@ -47,4 +47,14 @@ public abstract class Item {
         }
         this.stockQuantity = reststock;
     }
+
+    /**
+     * 아이템 수정
+     * @param param Book 타입 참조 변수
+     */
+    public void changeItem(Book param){
+        this.setPrice(param.getPrice());
+        this.setName(param.getName());
+        this.setStockQuantity(param.getStockQuantity());
+    }
 }
